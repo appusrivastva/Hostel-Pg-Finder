@@ -1,0 +1,63 @@
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import { useParams, Link, useNavigate } from 'react-router-dom';
+
+import Footer from '../Footer';
+import UserHeader from './UserHeader';
+
+export default function User_HostelOwner_deatils() {
+  const [hostel, setHostel] = useState([]);
+  const { value } = useParams();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const token_data = localStorage.getItem("token_key");
+      if (!token_data) {
+        navigate("/user_login");
+      } else {
+        const URL = "http://localhost:4000/user/viewhosteldetails";
+        const params = {
+          owner_id: value,
+        };
+        try {
+          const resp = await axios.get(URL, { params });
+          setHostel(resp.data);
+        } catch (err) {
+          console.log(err.message);
+        }
+      }
+    };
+    fetchData();
+  }, [value, navigate]);
+
+  return (
+    <>
+      <UserHeader />
+      <h1>Hostel Owner details</h1>
+      <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+        {hostel.map((e) => (
+          <div key={e._id} className="card" style={{ flex: '0 0 calc(33.33% - 20px)', margin: '10px' }}>
+            <img src={`http://localhost:4000/addHostel/${e.pic}`} className="card-img-top" alt="Hostel" />
+            <div className="card-body">
+              <h5 className="card-title">Hostel Name: {e.name}</h5>
+              <p className="card-text">
+                <h6>Owner contact email: {e.email}</h6>
+                <h6>Contact number: {e.phone}</h6>
+                <h5>Hostel ID: {e._id}</h5>
+              </p>
+              <h5 className="card-title">Hostel address: {e.address}</h5>
+              <h5 className="card-title">Hostel type: {e.hostel_type}</h5>
+              <h3>
+                <Link to={`/tap/${e.owner_id}/${e._id}`} className="btn bg-dark text-white">
+                  Tap for Room Details
+                </Link>
+              </h3>
+            </div>
+          </div>
+        ))}
+      </div>
+      <Footer />
+    </>
+  );
+}

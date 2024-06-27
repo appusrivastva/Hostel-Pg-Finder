@@ -1,0 +1,32 @@
+.container{
+   margin: 0;
+   padding: 0;
+    box-sizing: border-box;
+    /* background-image: url('./hostel.jpg') ; */
+    /* background-size: contain; */
+}
+
+.container .box{
+  
+    border:2px solid black;
+    justify-content: center;
+    align-items: center;
+
+    background-color: lightgreen;
+
+
+
+    height: 630px;
+    width: 480px;
+    position: relative;
+    left: 500px;
+    top: 50px;
+    
+
+
+   
+
+}
+.box h2{
+    text-align: center;
+}

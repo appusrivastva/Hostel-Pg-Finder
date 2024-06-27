@@ -1,7 +1,6 @@
 import mongoose from 'mongoose';
 const db_url=
-"mongodb+srv://appuwork11:Appux%402015@accomodationfinder.uhrrr6o.mongodb.net/hostel_db"
-
+""
 
 const connect_db=async ()=>{
     

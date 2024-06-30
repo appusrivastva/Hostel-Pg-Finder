@@ -8,8 +8,8 @@ import OwnerHeader from "./OwnerHeader";
 export default function OwnerEditProfile() {
   const [profile, setProfile] = useState({name: "", email: "", phone: "" });
   const navigate = useNavigate();
-  const URL = "http://localhost:4000/owner/profile";
-  const edit_URL = "http://localhost:4000/owner/editprofile";
+  const URL = "https://hostel-pg-finder.onrender.com/owner/profile";
+  const edit_URL = "https://hostel-pg-finder.onrender.com/owner/editprofile";
 
   const token_data = localStorage.getItem("token_key");
   console.log(`token data is ${token_data}`);

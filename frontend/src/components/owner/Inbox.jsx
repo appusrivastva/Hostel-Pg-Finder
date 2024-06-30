@@ -11,12 +11,12 @@ import OwnerHeader from './OwnerHeader'
 
 function Inbox() {
   const [profile, setProfile] = useState({});
-  let URL="http://localhost:4000/owner/receiveMsg"
+  let URL="https://hostel-pg-finder.onrender.com/owner/receiveMsg"
  
   const navigate=useNavigate()
 
   const [inbox,setInbox]=useState([])
-  const P_URL = "http://localhost:4000/owner/profile";
+  const P_URL = "https://hostel-pg-finder.onrender.com/owner/profile";
   useEffect(() => {
     const fetchData = async (e) => {
       const token_data = localStorage.getItem("token_key");

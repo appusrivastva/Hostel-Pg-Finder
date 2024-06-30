@@ -7,7 +7,7 @@ function UserRegistration() {
   const [user,setUser]=useState({
     id:'',password:'',name:'',email:'',phone:''
   })
-  let URL="http://localhost:4000/user/register";
+  let URL="https://hostel-pg-finder.onrender.com/user/register";
 
   const handelChange=(e)=>{
     // console.log(e.target.name);

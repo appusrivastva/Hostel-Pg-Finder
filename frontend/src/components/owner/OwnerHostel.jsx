@@ -43,7 +43,7 @@ export default function OwnerHostel() {
     "Vadodara"
   
 ];
-  const URL = "http://localhost:4000/owner/hostelDetail";
+  const URL = "https://hostel-pg-finder.onrender.com/owner/hostelDetail";
 
   const validateForm = () => {
     // Name validation

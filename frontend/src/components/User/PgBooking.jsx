@@ -8,10 +8,10 @@ export default function PgBooking() {
   const { value } = useParams();
   const rid = value;
   const navigate = useNavigate();
-  const url = "http://localhost:4000/user/viewonepgRoom";
-  const book_URL = "http://localhost:4000/user/bookpg";
+  const url = "https://hostel-pg-finder.onrender.com/user/viewonepgRoom";
+  const book_URL = "https://hostel-pg-finder.onrender.com/user/bookpg";
   // get QR
-  const QR_url = "http://localhost:4000/user/getpgQR";
+  const QR_url = "https://hostel-pg-finder.onrender.com/user/getpgQR";
 
   const [aroomdata, setAroomdata] = useState("");
   const [book, setBook] = useState({
@@ -103,7 +103,7 @@ export default function PgBooking() {
 
           {/* get QR code  */}
           <img
-            src={`http://localhost:4000/ALL_QR_CODE_pg/${qrcode.qr_code}`}
+            src={`https://hostel-pg-finder.onrender.com/ALL_QR_CODE_pg/${qrcode.qr_code}`}
             alt="QR"
             style={imageStyle}
           />

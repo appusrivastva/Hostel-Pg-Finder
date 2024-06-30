@@ -8,7 +8,7 @@ import UserHeader from "./UserHeader";
 
 export default function View_PgRoomDetails() {
   const { value, pg_id } = useParams();
-  const url = "http://localhost:4000/user/viewpgRoomDetails";
+  const url = "https://hostel-pg-finder.onrender.com/user/viewpgRoomDetails";
   const token_data = localStorage.getItem("token_key");
 
   const [roomDataWithStatus, setRoomDataWithStatus] = useState([]);
@@ -42,7 +42,7 @@ export default function View_PgRoomDetails() {
     if (data.length > 0) {
       for (const e of data) {
         try {
-          const res = await axios.get(`http://localhost:4000/user/pgbooking/${e._id}/${token_data}`);
+          const res = await axios.get(`https://hostel-pg-finder.onrender.com/user/pgbooking/${e._id}/${token_data}`);
           console.log(res);
           e.status = res.data.status;
           console.log(e.status);

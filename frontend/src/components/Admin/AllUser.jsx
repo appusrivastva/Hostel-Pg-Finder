@@ -6,7 +6,7 @@ import Footer from '../Footer';
 
 export default function AllUser() {
   const [users, setUsers] = useState([]);
-  const url = "http://localhost:4000/admin/alluser";
+  const url = "https://hostel-pg-finder.onrender.com/admin/alluser";
   const navigate = useNavigate();
 
   useEffect(() => {

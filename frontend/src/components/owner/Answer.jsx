@@ -10,7 +10,7 @@ export default function Pending() {
   const [view, setView] = useState([]);
 
 
-  const URL = "http://localhost:4000/owner/viewquery";
+  const URL = "https://hostel-pg-finder.onrender.com/owner/viewquery";
 
   useEffect(() => {
     const fetchData = async (e) => {

@@ -10,7 +10,7 @@ const MySwal = withReactContent(Swal);
 
 
 const AdminLogin=() => {
-  const URL="http://localhost:4000/admin/login"
+  const URL="https://hostel-pg-finder.onrender.com/admin/login"
     
   const error_msg={}
   const [error,setError]=useState({})

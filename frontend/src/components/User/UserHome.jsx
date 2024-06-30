@@ -8,7 +8,7 @@ import axios from "axios";
 export default function UserHome() {
   const [profile, setProfile] = useState({});
   const navigate = useNavigate();
-  const URL = "http://localhost:4000/user/profile";
+  const URL = "https://hostel-pg-finder.onrender.com/user/profile";
   useEffect(() => {
     const fetchData = async (e) => {
       const token_data = localStorage.getItem("token_key");

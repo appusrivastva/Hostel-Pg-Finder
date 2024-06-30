@@ -69,7 +69,7 @@ const Contact = () => {
     });
 
     try {
-      const res = await axios.post("http://localhost:4000/addContact", contact);
+      const res = await axios.post("https://hostel-pg-finder.onrender.com/addContact", contact);
       MySwal.fire({
         title: "Contact",
         text: res.data,

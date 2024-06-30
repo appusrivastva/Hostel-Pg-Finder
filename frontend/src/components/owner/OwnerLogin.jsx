@@ -9,7 +9,7 @@ const MySwal = withReactContent(Swal);
 
 
 const OwnerLogin=() => {
-  const URL="http://localhost:4000/owner/login"
+  const URL="https://hostel-pg-finder.onrender.com/owner/login"
 
   
   let [formData,setFormData]=useState({id:"",password:""})

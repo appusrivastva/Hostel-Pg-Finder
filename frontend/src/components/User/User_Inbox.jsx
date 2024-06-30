@@ -12,7 +12,7 @@ import UserHeader from './UserHeader'
 
 function Inbox() {
  
-  let URL="http://localhost:4000/user/receiveMsg"
+  let URL="https://hostel-pg-finder.onrender.com/user/receiveMsg"
 
   
 

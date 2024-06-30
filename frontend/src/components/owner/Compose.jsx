@@ -20,8 +20,8 @@ import { useEffect } from 'react';
 
 function Compose() {
   const [profile, setProfile] = useState({});
-  let URL="http://localhost:4000/owner/sendMsg"
-  const P_URL = "http://localhost:4000/owner/profile";
+  let URL="https://hostel-pg-finder.onrender.com/owner/sendMsg"
+  const P_URL = "https://hostel-pg-finder.onrender.com/owner/profile";
   const navigate=useNavigate()
   const token_data = localStorage.getItem("token_key");
 

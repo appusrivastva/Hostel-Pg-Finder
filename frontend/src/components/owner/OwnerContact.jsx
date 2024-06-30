@@ -11,7 +11,7 @@ import { useNavigate } from 'react-router-dom'
 export default function AllContact() {
   const [profile, setProfile] = useState({});
   const navigate = useNavigate();
-  const P_URL = "http://localhost:4000/owner/profile";
+  const P_URL = "https://hostel-pg-finder.onrender.com/owner/profile";
   useEffect(() => {
     const fetchData = async (e) => {
       const token_data = localStorage.getItem("token_key");
@@ -35,7 +35,7 @@ export default function AllContact() {
     };
     fetchData();
   },[]);
-  const URL="http://localhost:4000/owner/allcontact";
+  const URL="https://hostel-pg-finder.onrender.com/owner/allcontact";
   const [usercontact,setUsercontact]=useState([]);
   useEffect(()=>{
      const fetchData=async ()=>{

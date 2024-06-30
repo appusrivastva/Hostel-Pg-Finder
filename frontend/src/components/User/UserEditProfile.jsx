@@ -8,8 +8,8 @@ import axios from "axios";
 export default function UserEditProfile() {
   const [profile, setProfile] = useState({id:"",name: "", email: "", phone: "" });
   const navigate = useNavigate();
-  const URL = "http://localhost:4000/user/profile";
-  const edit_URL = "http://localhost:4000/user/editprofile";
+  const URL = "https://hostel-pg-finder.onrender.com/user/profile";
+  const edit_URL = "https://hostel-pg-finder.onrender.com/user/editprofile";
 
   const token_data = localStorage.getItem("token_key");
   console.log(`token data is ${token_data}`);

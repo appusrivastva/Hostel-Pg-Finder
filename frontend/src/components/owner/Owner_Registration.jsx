@@ -40,7 +40,7 @@ export default function Owner_Registration() {
     "Vadodara"
   
 ]
-  const URL = "http://localhost:4000/owner/register";
+  const URL = "https://hostel-pg-finder.onrender.com/owner/register";
 
   function handleInputChange(event) {
     setFormData((currData) => {

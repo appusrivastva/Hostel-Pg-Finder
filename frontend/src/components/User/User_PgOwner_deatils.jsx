@@ -9,7 +9,7 @@ import UserHeader from "./UserHeader";
 export default function User_PgOwner_deatils() {
   const [pg, setPg] = useState([]);
   const { value } = useParams();
-  let URL = "http://localhost:4000/user/viewpgdetails";
+  let URL = "https://hostel-pg-finder.onrender.com/user/viewpgdetails";
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -39,7 +39,7 @@ export default function User_PgOwner_deatils() {
       <div style={{ display: "flex", flexWrap: "wrap" }}>
         {pg.map((e) => (
           <div key={e._id} className="card" style={{ flex: "0 0 calc(33.33% - 20px)", margin: "10px" }}>
-            <img src={`http://localhost:4000/addpg/${e.pic}`} className="card-img-top" alt="Pg" />
+            <img src={`https://hostel-pg-finder.onrender.com/addpg/${e.pic}`} className="card-img-top" alt="Pg" />
             <div className="card-body">
               <h5 className="card-title">Pg Name: {e.name}</h5>
               <p className="card-text">

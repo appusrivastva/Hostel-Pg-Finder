@@ -6,7 +6,7 @@ import AdminHeader from './AdminHeader';
 
 export default function AllFeedback() {
   const [userfeedback, setUserfeedback] = useState([]);
-  const URL = "http://localhost:4000/admin/allfeedback";
+  const URL = "https://hostel-pg-finder.onrender.com/admin/allfeedback";
   const navigate = useNavigate();
 
   useEffect(() => {

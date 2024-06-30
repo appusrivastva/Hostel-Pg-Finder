@@ -8,10 +8,10 @@ export default function HostelBooking() {
   const { value } = useParams();
   const rid = value;
   const navigate = useNavigate();
-  const url = "http://localhost:4000/user/viewoneRoom";
-  const book_URL = "http://localhost:4000/user/bookhostel";
+  const url = "https://hostel-pg-finder.onrender.com/user/viewoneRoom";
+  const book_URL = "https://hostel-pg-finder.onrender.com/user/bookhostel";
   // get QR
-  const QR_url = "http://localhost:4000/user/getQR";
+  const QR_url = "https://hostel-pg-finder.onrender.com/user/getQR";
 
   const [aroomdata, setAroomdata] = useState("");
   const [book, setBook] = useState({
@@ -103,7 +103,7 @@ export default function HostelBooking() {
 
           {/* get QR code  */}
           <img
-            src={`http://localhost:4000/ALL_QR_CODE/${qrcode.qr_code}`}
+            src={`https://hostel-pg-finder.onrender.com/ALL_QR_CODE/${qrcode.qr_code}`}
             alt="QR"
             style={imageStyle}
           />

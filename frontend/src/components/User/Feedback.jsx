@@ -20,7 +20,7 @@ const Feedback = ()=>{
     const [feedback,setFeedback]=useState({name:"",email:"",remark:"",rating:""})
     const [errors, setErrors] = useState({})
 
-    const URL="http://localhost:4000/user/addFeedback"
+    const URL="https://hostel-pg-finder.onrender.com/user/addFeedback"
 
     function handleChange(e){
         setFeedback((currVal)=>{

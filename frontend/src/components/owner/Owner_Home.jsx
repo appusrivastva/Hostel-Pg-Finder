@@ -8,7 +8,7 @@ import { useNavigate,Link } from 'react-router-dom'
 export default function OwnerHome() {
   const [profile, setProfile] = useState({});
   const navigate = useNavigate();
-  const URL = "http://localhost:4000/owner/profile";
+  const URL = "https://hostel-pg-finder.onrender.com/owner/profile";
   useEffect(() => {
     const fetchData = async (e) => {
       const token_data = localStorage.getItem("token_key");

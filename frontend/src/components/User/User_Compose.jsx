@@ -17,7 +17,7 @@ import Footer from '../Footer'
 import UserHeader from './UserHeader'
 
 function User_Compose() {
-  let URL="http://localhost:4000/owner/sendMsg"
+  let URL="https://hostel-pg-finder.onrender.com/owner/sendMsg"
   const token_data = localStorage.getItem("token_key");
 
   const [compose,setCompose]=useState({sid:token_data,rid:"",subject:"",msg:""})

@@ -4,7 +4,7 @@ import axios from 'axios';
 import AdminHeader from './AdminHeader';
 
 export default function AllContact() {
-  const URL = "http://localhost:4000/admin/allcontact";
+  const URL = "https://hostel-pg-finder.onrender.com/admin/allcontact";
   const [usercontact, setUsercontact] = useState([]);
 
   useEffect(() => {

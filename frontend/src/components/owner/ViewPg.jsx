@@ -8,8 +8,8 @@ import Footer from '../Footer';
 export default function ViewPg() {
 
   const [pg,setPg]=useState([]);
-  let URL="http://localhost:4000/owner/viewpg";
-  // let pic_url='http://localhost:4000/viewhostel/addHostel/'
+  let URL="https://hostel-pg-finder.onrender.com/owner/viewpg";
+  // let pic_url='https://hostel-pg-finder.onrender.com/viewhostel/addHostel/'
   const navigate=useNavigate();
 
   useEffect(() => {

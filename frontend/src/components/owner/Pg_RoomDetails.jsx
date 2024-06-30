@@ -17,7 +17,7 @@ const Pg_RoomDetails = () => {
     charges: '',
     facilities: '',
   });
-  let URL = "http://localhost:4000/owner/pgroomdetails";
+  let URL = "https://hostel-pg-finder.onrender.com/owner/pgroomdetails";
 
   const handleChange = (event) => {
     const { name, value } = event.target;

@@ -6,7 +6,7 @@ import Footer from '../Footer';
 
 export default function AllPgOwner() {
     let [owner,setOwner]=useState([]);
-    let url="http://localhost:4000/admin/allpgowner"
+    let url="https://hostel-pg-finder.onrender.com/admin/allpgowner"
     const navigate=useNavigate();
  
 

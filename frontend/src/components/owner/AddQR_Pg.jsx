@@ -10,7 +10,7 @@ export default function AddQR_Pg() {
   const [qrcode, setQrcode] = useState("");
   const [profile, setProfile] = useState({});
   
-  const P_URL = "http://localhost:4000/owner/profile";
+  const P_URL = "https://hostel-pg-finder.onrender.com/owner/profile";
   const navigate = useNavigate();
   const handlePic = (e) => {
     let selectpic = e.target.files[0];
@@ -42,7 +42,7 @@ export default function AddQR_Pg() {
     fetchData();
   },[]);
 
-  const URL = "http://localhost:4000/owner/addQR_pg";
+  const URL = "https://hostel-pg-finder.onrender.com/owner/addQR_pg";
 
   const handleSubmit = async (e) => {
     e.preventDefault();

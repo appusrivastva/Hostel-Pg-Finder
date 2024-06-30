@@ -16,7 +16,7 @@ export default function User_HostelOwner_deatils() {
       if (!token_data) {
         navigate("/user_login");
       } else {
-        const URL = "http://localhost:4000/user/viewhosteldetails";
+        const URL = "https://hostel-pg-finder.onrender.com/user/viewhosteldetails";
         const params = {
           owner_id: value,
         };
@@ -38,7 +38,7 @@ export default function User_HostelOwner_deatils() {
       <div style={{ display: 'flex', flexWrap: 'wrap' }}>
         {hostel.map((e) => (
           <div key={e._id} className="card" style={{ flex: '0 0 calc(33.33% - 20px)', margin: '10px' }}>
-            <img src={`http://localhost:4000/addHostel/${e.pic}`} className="card-img-top" alt="Hostel" />
+            <img src={`https://hostel-pg-finder.onrender.com/addHostel/${e.pic}`} className="card-img-top" alt="Hostel" />
             <div className="card-body">
               <h5 className="card-title">Hostel Name: {e.name}</h5>
               <p className="card-text">

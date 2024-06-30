@@ -5,7 +5,7 @@ import axios from 'axios'
 
 const NavBar = ({d1,f1,d2,f2}) => {
   
-  let url="http://localhost:4000/searchHostel"
+  let url="https://hostel-pg-finder.onrender.com/searchHostel"
   
 
   const [city,setCity]=useState("")

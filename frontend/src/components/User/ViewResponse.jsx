@@ -7,7 +7,7 @@ import UserHeader from './UserHeader'
 export default function ViewResponse() {
     const {value}=useParams();
 
-let url="http://localhost:4000/user/viewResponse";
+let url="https://hostel-pg-finder.onrender.com/user/viewResponse";
 
 
 const [response,setResponse]=useState([])

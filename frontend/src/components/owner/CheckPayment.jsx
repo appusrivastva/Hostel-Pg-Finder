@@ -9,10 +9,10 @@ const CheckPayment = () => {
   const [isrefresh,setIsrefresh]=useState(false)
   const [currImage,setCurrImage]=useState("")
   const [showImage,setShowImage]=useState(false)
-  const URL="http://localhost:4000/owner/checkpayment"
+  const URL="https://hostel-pg-finder.onrender.com/owner/checkpayment"
   const token_data = localStorage.getItem("token_key");
   console.log(`token data is ${token_data}`);
-  const new_url="http://localhost:4000/owner/confirmbook"
+  const new_url="https://hostel-pg-finder.onrender.com/owner/confirmbook"
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -66,8 +66,8 @@ const CheckPayment = () => {
       <div style={styles.list}>
         {data.map((item, index) => (
           <div key={index} style={styles.item}>
-            <img src={`http://localhost:4000/All_payment_pic/${item.payment_pic}`} alt="User" style={styles.image} onClick={()=>{
-              setCurrImage(`http://localhost:4000/All_payment_pic/${item.payment_pic}`)
+            <img src={`https://hostel-pg-finder.onrender.com/All_payment_pic/${item.payment_pic}`} alt="User" style={styles.image} onClick={()=>{
+              setCurrImage(`https://hostel-pg-finder.onrender.com/All_payment_pic/${item.payment_pic}`)
               setShowImage(true)
             }} />
             <div style={styles.details}>

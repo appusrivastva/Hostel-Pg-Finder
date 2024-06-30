@@ -27,7 +27,7 @@ export default function Hostel() {
 
  
 
-  let URL = "http://localhost:4000/user/viewhostelowner";
+  let URL = "https://hostel-pg-finder.onrender.com/user/viewhostelowner";
 
  
 

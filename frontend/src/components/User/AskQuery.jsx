@@ -15,7 +15,7 @@ function AskQuery() {
   question:"",answer:""});
   // const [searchResults, setSearchResults] = useState([]);
  
-  let URL="http://localhost:4000/user/querySearch";
+  let URL="https://hostel-pg-finder.onrender.com/user/querySearch";
 
   
 

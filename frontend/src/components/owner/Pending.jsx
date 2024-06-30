@@ -11,13 +11,13 @@ export default function Pending() {
   // const [answer,setAnswer]=useState("")
   const [profile, setProfile] = useState({});
 
-  const P_URL = "http://localhost:4000/owner/profile";
+  const P_URL = "https://hostel-pg-finder.onrender.com/owner/profile";
   const navigate = useNavigate();
 
   const [query, setQuery] = useState({ _id: "", answer: "" });
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  const URL = "http://localhost:4000/owner/viewquery";
-  const new_URL = "http://localhost:4000/owner/answerquery";
+  const URL = "https://hostel-pg-finder.onrender.com/owner/viewquery";
+  const new_URL = "https://hostel-pg-finder.onrender.com/owner/answerquery";
   useEffect(() => {
     const fetchData = async (e) => {
       const token_data = localStorage.getItem("token_key");

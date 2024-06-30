@@ -26,8 +26,8 @@ export default function HostelOwner() {
   const [state, setState] = useState(false);
 
 
-  let URL = "http://localhost:4000/owner/viewPgOwner";
-  let new_url = "http://localhost:4000/owner/viewPgdetails/";
+  let URL = "https://hostel-pg-finder.onrender.com/owner/viewPgOwner";
+  let new_url = "https://hostel-pg-finder.onrender.com/owner/viewPgdetails/";
 
   useEffect(() => {
     const fetchData = async () => {

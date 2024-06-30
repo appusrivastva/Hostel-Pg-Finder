@@ -26,7 +26,7 @@ export default function Pg() {
 
  
 
-  let URL = "http://localhost:4000/user/viewpgowner";
+  let URL = "https://hostel-pg-finder.onrender.com/user/viewpgowner";
 
  
 

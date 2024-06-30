@@ -12,7 +12,7 @@ export default function View_RoomDetails() {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
   const token_data = localStorage.getItem("token_key");
-  const url = "http://localhost:4000/user/viewRoomDetails";
+  const url = "https://hostel-pg-finder.onrender.com/user/viewRoomDetails";
 
   useEffect(() => {
     const fetchData = async () => {
@@ -46,7 +46,7 @@ export default function View_RoomDetails() {
     for (const e of data) {
       try {
         const res = await axios.get(
-          `http://localhost:4000/user/hostelbooking/${e._id}/${token_data}`
+          `https://hostel-pg-finder.onrender.com/user/hostelbooking/${e._id}/${token_data}`
         );
         console.log(e, "#########################");
         e.status = res.data.status;

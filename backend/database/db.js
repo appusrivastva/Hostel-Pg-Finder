@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv'
 
 
-const db_url=process.dotenv.DB_URL || "";
+const db_url=process.env.DB_URL || "";
 
 const connect_db=async ()=>{
     

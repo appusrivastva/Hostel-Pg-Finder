@@ -1,6 +1,8 @@
 import mongoose from 'mongoose';
-const db_url=
-""
+import dotenv from 'dotenv'
+
+
+const db_url=process.dotenv.DB_URL || "";
 
 const connect_db=async ()=>{
     

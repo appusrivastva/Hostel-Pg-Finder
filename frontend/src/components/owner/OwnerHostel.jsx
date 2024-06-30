@@ -189,7 +189,7 @@ export default function OwnerHostel() {
             <div className="form-check form-check-inline">
               <input className="form-check-input" type="radio" name="hostel_type" id="boys" value="boys" onChange={handleInputChange} checked={formData.hostel_type === 'boys'} />
               <label className="form-check-label" htmlFor="boys">Boys</label>
-            </div> accept="image/*"
+            </div> 
           </div>
           <div className="form-group mb-4">
             <label htmlFor="exampleFormControlTextarea1" className="form-label">Facilities</label>
